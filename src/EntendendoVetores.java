@@ -12,12 +12,12 @@ public class EntendendoVetores {
 		vetorA[1] = 99 ; // Atribuiu 99 na posiçao/indice 1 do vetorA
 		System.out.println(vetorA[0]);
 		
-		for (int i=0; i<30; i++) {
-			vetorA[i] = Integer.parseInt(JOptionPane.showInputDialog("Indique um valor: "));
+		for (int i=0; i<vetorA.length; i++) {
+			vetorA[i] = Integer.parseInt(JOptionPane.showInputDialog( i + " Indique um valor: "));
 		}
-		for (int i=0; i<30; i++) {
+		for (int i=0; i<vetorA.length; i++) {
 			System.out.println(vetorA[i]);
 		}
-		
+		System.out.println("o tamanho do vetor é " + vetorA.length);
 	}
 }
